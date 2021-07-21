@@ -7,7 +7,6 @@ class Person {
     LocalDate birthDate;
 
     public Person(String name, LocalDate birthDate) {
-        System.out.println("Hello Worker!");
         this.name = name;
         this.birthDate = birthDate;
     }
