@@ -2,7 +2,7 @@ package day2;
 
 import java.math.BigDecimal;
 
-public class Cooker implements Valuable{
+public class Cooker implements Catalog{
     private final int power;
     private final String name;
     private final BigDecimal price;
@@ -17,5 +17,11 @@ public class Cooker implements Valuable{
     @Override
     public BigDecimal price() {
         return price;
+    }
+
+
+    @Override
+    public String describe() {
+        return "Power: " + power +", name: " + name + ", price: " + price;
     }
 }

@@ -39,6 +39,6 @@ public class Panel implements Valuable {
 
     @Override
     public BigDecimal price() {
-        return price(new BigDecimal("15.5"));
+        return price(new BigDecimal("0.1"));
     }
 }
