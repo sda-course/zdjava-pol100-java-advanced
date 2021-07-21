@@ -1,6 +1,10 @@
 package day1.model;
 
-abstract public class MusicalInstrument {
+import day2.Valuable;
+
+import java.math.BigDecimal;
+
+abstract public class MusicalInstrument implements Valuable {
     private final String producer;
 
     protected MusicalInstrument(String producer) {
@@ -13,4 +17,8 @@ abstract public class MusicalInstrument {
 
     abstract public void sound(int note, int interval);
 
+    @Override
+    public BigDecimal price() {
+        return new BigDecimal("300");
+    }
 }

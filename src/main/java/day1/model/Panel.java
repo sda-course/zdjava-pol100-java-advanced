@@ -1,8 +1,10 @@
 package day1.model;
 
+import day2.Valuable;
+
 import java.math.BigDecimal;
 
-public class Panel {
+public class Panel implements Valuable {
     private int width;
     private int height;
 
@@ -33,5 +35,10 @@ public class Panel {
                 "width=" + width +
                 ", height=" + height +
                 '}';
+    }
+
+    @Override
+    public BigDecimal price() {
+        return price(new BigDecimal("15.5"));
     }
 }
