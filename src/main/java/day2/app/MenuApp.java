@@ -29,10 +29,25 @@ public class MenuApp {
                                     }
                                 }
                         ),
-                        new MenuItem( "Oblicz a + b",3, null),
-                        new MenuItem( "Wyjście",0, null)
+                        new MenuItem("Oblicz a + b", 3,
+                                new MenuAction() {
+                                    @Override
+                                    public void execute() {
+                                        System.out.println("Wynik: " + (a + b));
+                                    }
+                                }),
+                        new MenuItem("Wyjście", 0, new MenuAction() {
+                            @Override
+                            public void execute() {
+                                System.exit(0);
+                            }
+                        })
                 )
         );
-        menu.print();
+        while(true) {
+            menu.print();
+            int option = scanner.nextInt();
+            menu.executeAction(option);
+        }
     }
 }
