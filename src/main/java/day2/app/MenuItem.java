@@ -1,5 +1,7 @@
 package day2.app;
 
+import day2.app.menu.MenuAction;
+
 public class MenuItem {
     private final String label;
     private final int option;

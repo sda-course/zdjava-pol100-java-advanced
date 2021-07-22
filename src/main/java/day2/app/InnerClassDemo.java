@@ -11,16 +11,16 @@ public class InnerClassDemo {
             numbers[i] = random.nextInt(100000);
         }
         //klasa wewnętrzna w metodzie;
-        class Found{
+        class Result {
             int index;
             int max;
 
-            public Found() {
+            public Result() {
                 index = 0;
                 max = Integer.MIN_VALUE;
             }
         }
-        Found result = new Found();
+        Result result = new Result();
         for(int i = 0; i < numbers.length; i++){
             if (numbers[i] > result.max){
                 result.max = numbers[i];

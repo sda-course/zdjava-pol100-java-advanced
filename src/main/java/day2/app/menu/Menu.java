@@ -1,4 +1,6 @@
-package day2.app;
+package day2.app.menu;
+
+import day2.app.MenuItem;
 
 import java.util.List;
 

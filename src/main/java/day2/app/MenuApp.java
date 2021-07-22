@@ -1,5 +1,8 @@
 package day2.app;
 
+import day2.app.menu.Menu;
+import day2.app.menu.MenuAction;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

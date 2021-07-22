@@ -1,8 +1,8 @@
 package day2.app;
 
-import day2.Point;
-import day2.Shape;
-import day2.Square;
+import day2.interfaces.Point;
+import day2.interfaces.Shape;
+import day2.interfaces.Square;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package day1.model;
 
-import day2.Valuable;
+import day2.interfaces.Valuable;
 
 import java.math.BigDecimal;
 

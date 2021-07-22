@@ -1,4 +1,4 @@
-package day2;
+package day2.interfaces;
 
 public class Point implements Shape{
     @Override

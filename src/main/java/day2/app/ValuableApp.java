@@ -3,10 +3,10 @@ package day2.app;
 import day1.model.Guitar;
 import day1.model.MusicalInstrument;
 import day1.model.Panel;
-import day2.Catalog;
-import day2.Cooker;
-import day2.Description;
-import day2.Valuable;
+import day2.interfaces.Catalog;
+import day2.interfaces.Cooker;
+import day2.interfaces.Description;
+import day2.interfaces.Valuable;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class ValuableApp {
         if (cooker instanceof Description){
             System.out.println("Kuchenka jest instancją Description");
         }
-        //deklarujemy obiekt klasy anonimowej implementującej interfesj
+        //deklarujemy obiekt klasy anonimowej implementującej interfejs.
         Valuable sugar = new Valuable() {
             @Override
             public BigDecimal price() {

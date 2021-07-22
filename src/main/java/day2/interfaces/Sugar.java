@@ -1,4 +1,4 @@
-package day2;
+package day2.interfaces;
 
 import java.math.BigDecimal;
 //bez klasy anonimowej musielibyśmy zadeklarować taką klasę
