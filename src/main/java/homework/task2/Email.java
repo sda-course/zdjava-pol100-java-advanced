@@ -1,7 +1,4 @@
 package homework.task2;
-
-import day1.model.Panel;
-
 import java.util.regex.Pattern;
 
 public class Email extends Message {
@@ -40,7 +37,7 @@ public class Email extends Message {
             return false;
         }
         //return emailAddress.matches("[a-zA-Z]{3,}@[a-z]{2,}\\.[a-z.]{2,}");
-        //lub lepiej, aby nie kompilowć wyrażenia regularnego z każdym wywołaniem
+        //lub lepiej, aby nie kompilować wyrażenia regularnego z każdym wywołaniem
         return emailPattern.matcher(emailAddress).matches();
     }
 
