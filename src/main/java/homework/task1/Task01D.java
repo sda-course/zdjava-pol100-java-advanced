@@ -11,6 +11,7 @@ class Worker extends Person{
  */
 public class Task01D {
     public static void main(String[] args) {
+
         Worker worker = new Worker();
     }
 }

@@ -3,7 +3,7 @@ package day3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ArrayException {
+public class ArrayExceptionApp {
     public static void main(String[] args) {
         String[] names = {"ALA", "OLA", "EWA", "KAROL"};
         Scanner scanner = new Scanner(System.in);

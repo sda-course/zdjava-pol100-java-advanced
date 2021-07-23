@@ -1,4 +1,6 @@
 package homework.task2;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Zadanie 2 (łatwe)
@@ -24,18 +26,11 @@ package homework.task2;
  * - temat wiadomości: null, pusty łańcuch,<br>
  * Wskazówka<br>
  * Aby kod był czytelny możesz nadpisać w klasach potomnych metodę canSend(), żeby wykorzystać ją w implementowanej metodzie send()
- */
-
-/**
+ *
  * Wersja dla ambitnych (średnio trudne)
  *  - metoda send() w sytuacji niemożności wysłania wiadomości zwraca komunikat: "Mail/SMS nie może został wysłany.Brak XXX",
  *  gdzie XXX to jedna z przyczyn (lub pierwsza wykryta przyczyna): brak treści, brak lub niepoprawny adres, brak lub niepoprawny temat, brak lub niepoprawny numeru telefonu.
- */
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-/**
+ *
  * Wersja dla wymiataczy (trudne)
  * Składowe takie jak content, emailAddress, phoneNumber, subject mogą też mieć swoją klasę bazową abstrakcyjną np. MessageComponent, która może mieć metody abstarkcyjne:
  *  - boolean isValid() - zwraca, czy zawartość jest poprawna

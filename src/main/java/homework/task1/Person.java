@@ -12,6 +12,7 @@ class Person {
     }
 
     public Person() {
+        System.out.println("Hello Worker");
     }
 
     @Override

@@ -1,5 +1,8 @@
 package homework.task1;
 
+import java.awt.event.WindowStateListener;
+import java.time.LocalDate;
+
 /**
  * Część 1
  * Zadeklaruj w metodzie main tablicę trzech obiektów klasy Person o nazwie persons.
@@ -13,6 +16,15 @@ package homework.task1;
  */
 public class Task01C {
     public static void main(String[] args) {
-
+        Person[] persons = new Person[3];
+        persons[0] = new Person("AA", LocalDate.of(2000,10,10));
+        persons[1] = new Person("BB", LocalDate.of(2000,10,10));
+        persons[2] = new Player("AA", LocalDate.of(2000,10,10), 123, null);
+        for(Person p: persons){
+            //System.out.println(p.name +" " +p.birthDate);
+            if (!(p instanceof Player)){
+                System.out.println(p);
+            }
+        }
     }
 }
