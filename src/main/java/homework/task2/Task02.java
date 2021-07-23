@@ -51,7 +51,7 @@ public class Task02 {
                 new SMS("Hello",""),
                 new SMS("Hello","123900899"),
                 new Email("Java jest super!!!","alek@op.pl","Java"),
-                new Email("Java jest super!!!","alek@op.pl",""),
+                new Email("Java jest super!!!","alek@op.pl"," "),
                 new Email("Java jest super!!!",null,"Java"),
                 new Email(null,"alek@op.pl","Java"),
                 new Email("Java jest super!!!","alek90","Java")

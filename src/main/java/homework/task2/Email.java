@@ -19,7 +19,7 @@ public class Email extends Message {
     @Override
     public String send() {
         if (canSend()) {
-            return "Mail o treści" + getContent() + " został wysłany na adres " + emailAddress;
+            return "Mail o treści " + getContent() + " został wysłany na adres " + emailAddress;
         } else {
             return "Mail nie może zostać wysłany";
         }
@@ -34,10 +34,10 @@ public class Email extends Message {
         if (emailAddress == null || emailAddress.isEmpty() || emailAddress.length() < 5) {
             return false;
         }
-        return emailAddress.matches("^[a-zA-Z]{3,}@[az]{2,}\\.[az.]{2,}$");
+        return emailAddress.matches("[a-zA-Z]{3,}@[a-z]{2,}\\.[a-z.]{2,}");
     }
 
     private boolean isValidSubject() {
-        return subject != null && subject.length() >= 5;
+        return subject != null && !subject.isEmpty();
     }
 }
