@@ -22,7 +22,7 @@ public class Task04 {
             if (s != null) {
                 System.out.println("Pole powierzchni " + s.area());
                 /**
-                 4. Dopisz tutaj instrukcję, która rozpozna, który z obiektów jest prostokotąm
+                 4. Dopisz tutaj instrukcję, która rozpozna, który z obiektów jest prostokątem
                  i wywoła metodę moveTo(new Point(0,0))
                  */
             }
@@ -30,7 +30,7 @@ public class Task04 {
         /**
          * Oczekiwane wyniki
          * - pole trójkąta = 12.50
-         * - pole koła     = 75.36
+         * - pole koła     = 78.5
          */
 
     }
