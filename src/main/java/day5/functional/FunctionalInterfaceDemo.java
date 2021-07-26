@@ -69,7 +69,6 @@ public class FunctionalInterfaceDemo {
                 return false;
             }
         }));
-
     }
 
     public static int countNumbers(List<Double> numbers, Predicate<Double> predicate){
