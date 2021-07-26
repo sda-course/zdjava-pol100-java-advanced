@@ -1,9 +1,11 @@
 package day3;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person>, Serializable {
+    public final static long serialVersionUID = 1L;
     private String name;
     private double weight;
     private LocalDate birthDate;
